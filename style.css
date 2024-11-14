@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    background-image: url('img/bground.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #2ccced; 
+    text-shadow: 1px 1px 1px black; /* black shadow */
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* deep color  */
+    color: #2ccced; /* blue */
+    padding: 20px;
+    text-shadow: 1px 1px 2px black; /* shadow size */
+}
+
+.main-photo img {
+    width: 400px;
+    max-width: 400px;
+    margin-top: 20px;
+    transition: transform 0.8s;
+}
+
+.main-photo img:hover {
+    transform: scale(1.4);
+}
+
+a {
+    text-decoration: none;
+    color: #ee5735; 
+    text-shadow: 1px 1px 2px black; 
+}
+
+a:hover {
+    color: #FF5730; 
+    text-shadow: 2px 2px 4px black; 
+}
+
+/* Gallery style */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transform: scale(1.6); translateY(-70px);
+}
